@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #00d2ff;
+    --secondary-color: #3a7bd5;
+    --bg-dark: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+.stApp {
+    background-color: var(--bg-dark);
+    color: #e2e8f0;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+}
+
+/* Glassmorphism containers */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.45);
+    transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: rgba(0, 210, 255, 0.3);
+}
+
+/* Header styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin-bottom: 2.5rem;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.header-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Tabs styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 30px;
+    background-color: transparent;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 60px;
+    white-space: pre-wrap;
+    background-color: var(--glass-bg);
+    border-radius: 14px 14px 0 0;
+    gap: 10px;
+    padding: 12px 25px;
+    border: 1px solid var(--glass-border);
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: rgba(0, 210, 255, 0.15) !important;
+    border-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Buttons */
+.stButton>button {
+    border-radius: 14px;
+    padding: 0.75rem 2rem;
+    background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+    color: white;
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    margin-top: 10px;
+}
+
+.stButton>button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 210, 255, 0.4);
+    background: linear-gradient(135deg, #33e1ff 0%, #4a8ce6 100%);
+}
+
+.stButton>button:active {
+    transform: translateY(-1px);
+}
+
+/* Chat bubbles */
+.chat-bubble {
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    max-width: 80%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.user-bubble {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+}
+
+.assistant-bubble {
+    background: linear-gradient(135deg, rgba(0, 210, 255, 0.12) 0%, rgba(0, 210, 255, 0.05) 100%);
+    border: 1px solid rgba(0, 210, 255, 0.3);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+/* Hide Streamlit elements */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+.stSidebar {display: none;}

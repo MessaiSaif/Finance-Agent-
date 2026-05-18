@@ -1,0 +1,140 @@
+[
+    {
+        "invoice_id": "123456789",
+        "date": "02/05/2026",
+        "client_name": "tekup",
+        "total_ht": 150.0,
+        "tva_amount": 28.5,
+        "timbre_fiscal": 1.0,
+        "total_ttc": 179.5,
+        "items": [
+            {
+                "description": "D\u00e9signation",
+                "quantity": 2.0,
+                "unit_price": 75.0,
+                "total_price": 150.0
+            }
+        ]
+    },
+    {
+        "invoice_id": "14715599",
+        "date": "12/05/2026",
+        "client_name": "esprit",
+        "total_ht": 400.0,
+        "tva_amount": 76.0,
+        "timbre_fiscal": 1.0,
+        "total_ttc": 477.0,
+        "items": [
+            {
+                "description": "Article",
+                "quantity": 2.0,
+                "unit_price": 200.0,
+                "total_price": 400.0
+            }
+        ]
+    },
+    {
+        "invoice_id": "552",
+        "date": "12/07/2021",
+        "client_name": "[Nom de l'entreprise du client]",
+        "total_ht": 400.0,
+        "tva_amount": 80.0,
+        "timbre_fiscal": 0.0,
+        "total_ttc": 480.0,
+        "items": [
+            {
+                "description": "mon produit",
+                "quantity": 2.0,
+                "unit_price": 50.0,
+                "total_price": 100.0
+            },
+            {
+                "description": "mon service",
+                "quantity": 3.0,
+                "unit_price": 100.0,
+                "total_price": 300.0
+            }
+        ]
+    },
+    {
+        "invoice_id": "6767",
+        "date": "29/04/2026",
+        "client_name": null,
+        "total_ht": 670.0,
+        "tva_amount": 127.3,
+        "timbre_fiscal": 1.0,
+        "total_ttc": 798.3,
+        "items": [
+            {
+                "description": "N/A",
+                "quantity": 1.0,
+                "unit_price": 670.0,
+                "total_price": 670.0
+            }
+        ]
+    },
+    {
+        "invoice_id": "2022029",
+        "date": "10/08/2023",
+        "client_name": "Votre client",
+        "total_ht": 7900.0,
+        "tva_amount": 0.0,
+        "timbre_fiscal": 0.0,
+        "total_ttc": 7900.0,
+        "items": [
+            {
+                "description": "Installation d'\u00e9lectricit\u00e9",
+                "quantity": 5.0,
+                "unit_price": 300.0,
+                "total_price": 1500.0
+            },
+            {
+                "description": "Installation de chauffage",
+                "quantity": 4.0,
+                "unit_price": 250.0,
+                "total_price": 1000.0
+            },
+            {
+                "description": "Carreaux",
+                "quantity": 200.0,
+                "unit_price": 25.0,
+                "total_price": 5000.0
+            },
+            {
+                "description": "Placement au sol",
+                "quantity": 5.0,
+                "unit_price": 80.0,
+                "total_price": 400.0
+            }
+        ]
+    },
+    {
+        "invoice_id": "FR-001",
+        "date": "29/01/2019",
+        "client_name": "Cendrillon Ayot",
+        "total_ht": 145.0,
+        "tva_amount": 29.0,
+        "timbre_fiscal": 0.0,
+        "total_ttc": 174.0,
+        "items": [
+            {
+                "description": "Grand brun escargot pour manger",
+                "quantity": 1.0,
+                "unit_price": 100.0,
+                "total_price": 100.0
+            },
+            {
+                "description": "Petit marini\u00e8re uniforme en bleu",
+                "quantity": 2.0,
+                "unit_price": 15.0,
+                "total_price": 30.0
+            },
+            {
+                "description": "Facile \u00e0 jouer accord\u00e9on",
+                "quantity": 3.0,
+                "unit_price": 5.0,
+                "total_price": 15.0
+            }
+        ]
+    }
+]
